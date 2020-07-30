@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Webpage Title -->
+    <title>마켓프레쉬</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        * {
+            font-family: 'Single Day', cursive;
+        }
+
+        .wrap {
+            width: 500px;
+            margin: auto;
+        }
+
+        .img {
+            background-image: url('http://4.bp.blogspot.com/-1MdJ29877xs/TmpZNRH5iDI/AAAAAAAAB64/H2ZfSBw2Uqc/s640/Dragon+Blood-tree_Socotra_tour.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .info {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1, h5 {
+            display: inline;
+        }
+
+        h6 {
+            color: darkred;
+            font-weight: bold;
+            display: inline;
+        }
+
+        .number {
+            color: black;
+        }
+
+        .custom-select {
+            width: 100px;
+            text-align: center;
+            color: darkgray;
+        }
+
+        .order1 {
+            text-align: center;
+            color: lightgreen;
+        }
+
+        .order2 {
+            text-align: center;
+        }
+
+        .orders {
+            margin-top: 100px;
+        }
+
+        #btn btn-primary button {
+            background-color: lightgreen;
+            border-radius: 30px;
+
+        }
+    </style>
+
+    <script>
+        function order1() {
+            alert('주문이 완료되었습니다');
+        }
+
+        function order2() {
+            alert('장바구니에 담겼습니다');
+        }
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="img"></div>
+    <div class="info">
+        <h1>대왕브로콜리</h1>
+        <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;가격:</h5>
+        <h6>18,000,000</h6><h5>&nbsp;원/개</h5>
+        <hr>
+        <p>100년된 대왕 브로콜리 입니다! 몸의 select 해독을 도와 술마신 다음날 아침에 먹으면 간이 술 마시기 전으로 회복되며, 눈 건강을 개선해 주어 몽골인 시력을 뛰어넘는 7.0의 시력을 가질 수 있습니다.
+            또한 노화를 막아주어 1개 복용시 1년 정도의 수명이 늘어나 100개를 복용하면 200살 까지 수명이 늘어납니다. </p>
+        <hr>
+    </div>
+    <div class="info">
+        <h1>주문하기</h1>
+        <p></p>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" id="order-name" aria-describedby="basic-addon3">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="order-count">
+                <option selected value=""> -- 수량을 선택하세요 --</option>
+                <select class="number">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                </select>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">주소</span>
+            </div>
+            <input type="text" class="form-control" id="order-address" aria-describedby="basic-addon3">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon3">전화번호</span>
+            </div>
+            <input type="text" class="form-control" id="order-phone" aria-describedby="basic-addon3">
+        </div>
+        <div class="order1 order2">
+            <button onclick="order1()" type="button1" class="btn btn-primary">바로주문</button>
+            <button onclick="order2()" type="button2" class="btn btn-primary">장바구니</button>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
